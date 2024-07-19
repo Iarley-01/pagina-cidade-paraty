@@ -101,6 +101,42 @@ p {
   font-weight: bold;
 }
 
+.secao-pontos {
+  background: #e9e9e9;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin: 12px 0 0px 0;
+}
+
+li::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/seta.png");
+  margin: 0 6px 0 0;
+}
+
+.galeria {
+  width: 100%;
+}
+
+.galeria img {
+  width: calc((100% / 3) - 3px);
+  opacity: 0.6;
+}
+
+.galeria img:hover {
+  opacity: 1;
+}
+
 @media(min-width: 460px){
   header div {
     justify-content: space-between;
