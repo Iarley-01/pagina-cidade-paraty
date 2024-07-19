@@ -31,6 +31,59 @@ header a {
   margin: 0 5px;
 }
 
+section {
+  padding: 60px 20px;
+}
+
+.secao-capa {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-image: url("../img/bg-estacao.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.secao-capa::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.secao-capa div {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-transform: uppercase;
+  padding: 60px 20px;
+  z-index: 1;
+}
+
+.secao-capa h1 {
+  font-size: 80px;
+}
+
+.secao-capa h2 {
+  font-size: 35px;
+}
+
+.secao-capa h1, .secao-capa h2 {
+  margin: 0;
+  color: #fff;
+  text-shadow: 1px 1px 5px #000000;
+}
+
 @media(min-width: 460px){
   header div {
     justify-content: space-between;
